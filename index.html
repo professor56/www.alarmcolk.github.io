@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D</title>
+    <style>
+          #ho{
+            color: yellow;
+            text-align: center;
+          }
+          body{
+            background-image: url('bg.jpg');
+            background-size: cover;
+          }
+          #gh{
+            border: 7px white solid;
+            width: 65vw;
+            height:65vh;
+            position: absolute;
+            left:15%;
+            background-color: white;
+          }
+          #fg{
+            color: purple;
+            text-align: center;
+          }
+          p{
+            color: purple;
+            font-size: 18px;
+            padding-left: 25%;    
+          }
+          form{
+            display: flex;
+        
+        
+          }
+          input{
+            position: absolute;
+            top: 150px;
+            left: 15%;
+            border: 2px purple solid;
+            width: 15vw;
+            height: 8vh;
+          }
+          #min{
+              position: absolute;
+              left: 45%;
+          }
+          #bn{
+            background-color: purple;
+            width: 12vw;
+            height: 7vh;
+            position: absolute;
+            top:75%;
+            left: 40%;
+            color: white;
+            font-size: 18px;
+          }
+    </style>
+</head>
+<body>
+    <div id="rt">
+        <h1 id="ho">Alarm Colk</h1>
+    </div>
+    <div id="gh">
+            <h1 id="fg">Set Alarm </h1>
+            <form>
+              <p>Hour</p>
+              <p>Minute</p>
+          
+              <input type="number" id="hou">
+              <input type="number" id="min">
+              <input type="button" id="bn" value="Set alarm">     
+            </form>
+    </div>
+    <script>
+      var b=document.getElementById('bn');
+      function ml() {
+        var hn=new Notification("m",{
+            body:'nnnnnnnnnnnn'
+          })
+      }
+      b.addEventListener('click',function(){
+        while(true){
+          var d=new Date();
+          var h=d.getHours();
+          var m=d.getMinutes();
+          var hj=document.getElementById('hou').value;
+          var mj=document.getElementById('min').value;
+          if(h==hj && m==mj){
+             location.href='https://www.youtube.com/watch?v=ocRNLnZiYYQ'
+        }
+        }
+      })
+    </script>
+</body>
+</html>
